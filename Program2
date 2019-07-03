@@ -6,8 +6,10 @@ public class Program2 {
         System.out.println("Enter the weigh of dinosaur in killograms ");
         int killograms = num.nextInt();
         float tonna = killograms / 1000f;
-        int milligrams = killograms * 1000;
+        int grams = killograms * 1000;
+        double milligrams = killograms * 1000000;
         System.out.println("The weigh of dinosaur in tonna = " +tonna);
+        System.out.println("The weigh of dinosaur in grams = " +grams);
         System.out.println("The weigh of dinosaur in milligrams = " +milligrams);
     }
 }
