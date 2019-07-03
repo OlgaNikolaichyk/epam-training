@@ -1,0 +1,13 @@
+import java.util.concurrent.SynchronousQueue;
+import java.util.Scanner;
+public class Program2 {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter the weigh of dinosaur in killograms ");
+        int killograms = num.nextInt();
+        float tonna = killograms / 1000f;
+        int milligrams = killograms * 1000;
+        System.out.println("The weigh of dinosaur in tonna = " +tonna);
+        System.out.println("The weigh of dinosaur in milligrams = " +milligrams);
+    }
+}
