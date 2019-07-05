@@ -1,3 +1,4 @@
+// first variant
 import java.util.concurrent.SynchronousQueue;
 import java.util.Scanner;
 public class Program1 {
@@ -16,3 +17,20 @@ public class Program1 {
         }
     }
 
+
+//second variant
+public class Program1 {
+    int a, b, c;
+
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 7;
+        int c = 3;
+        if (a == b & a == c) {  //false
+            System.out.println("a=" + a + ";b=" + b + ";c=" + c );
+            System.out.println("The numbers are equal!");
+        } else {
+            System.out.println("The numbers are different!");
+        }
+    }
+}
