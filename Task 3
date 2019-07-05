@@ -1,0 +1,13 @@
+import java.util.concurrent.SynchronousQueue;
+public class Program2 {
+    public static void main(String[] args) {
+        double R1 = 8;
+        double R2 = 5;
+        final double PI = 3.1415;
+        double outerRadiusR1 = R1 * R1 * PI;
+        double innerRadiusR2 = R2 * R2 * PI;
+        double areaOfCircle = outerRadiusR1 - innerRadiusR2;
+
+        System.out.println("The area of the circle is " + areaOfCircle);
+    }
+}
