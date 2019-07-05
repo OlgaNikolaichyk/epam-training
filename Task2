@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Program2 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        System.out.println("Enter the weigh of dinosaur in killograms ");
+        System.out.println("Enter the weigh of dinosaur in killograms "); //requested the weight of a dinosaur
         int killograms = num.nextInt();
         float tonna = killograms / 1000f;
         int grams = killograms * 1000;
