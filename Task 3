@@ -1,4 +1,3 @@
-import java.util.concurrent.SynchronousQueue;
 public class Program3 {
 public static void main(String[] args) {
         double R1 = 8;
