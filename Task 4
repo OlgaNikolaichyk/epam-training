@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Program2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a four-digit number, please  ");
+        int number = in.nextInt();
+        int firstDigit = number / 1000;
+        int secondDigit = number % 1000 / 100;
+        int thirdDigit = number % 100 / 10;
+        int fourthDigit = number % 10;
+        if (firstDigit < secondDigit & secondDigit < thirdDigit && thirdDigit < fourthDigit) {
+            System.out.println("All numbers in ascending order");
+        }
+        else {
+            if (firstDigit > secondDigit & secondDigit > thirdDigit && thirdDigit > fourthDigit) {
+                System.out.println("All numbers in descending order");
+            } else System.out.println("The numbers have no sequence");
+        }
+    }
+}
