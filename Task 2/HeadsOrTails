@@ -1,0 +1,19 @@
+import java.util.Random;
+        class HeadsOrTails {
+            public static void main(String[] args) {
+                int heads = 0;
+                int tails = 0;
+                Random rnd = new Random();
+                for (int i = 0; i < 250; i++) {
+                    if (rnd.nextInt(2) == 0) {
+                        ++heads;
+                    } else {
+                        ++tails;
+                    }
+                }
+                System.out.println("Из 250 раз, орел выпал - " + heads);
+                System.out.println("А решка - " + tails);
+            }
+        }
+
+
