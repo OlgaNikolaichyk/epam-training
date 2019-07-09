@@ -1,0 +1,47 @@
+//нод
+import java.util.Scanner;
+public class GCD {
+    public static void main(String[] args) {
+        int num1;
+        int num2;
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter first number:");
+        num1 = num.nextInt();
+        System.out.println("Enter second number:");
+        num2 = num.nextInt();
+        while (num1 != num2) {
+            if(num1 > num2)
+                num1 = num1 - num2;
+            else
+                num2 = num2 - num1;
+        }
+        System.out.printf("GCD of given numbers is: %d", num2);
+    }
+
+}
+//нок
+import java.util.Scanner;
+public class LCM {
+    public static void main(String args[]){
+        int a, b, max, step, lcm = 0;
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter first number: ");
+        a = num.nextInt();
+        System.out.println("Enter second number: ");
+        b = num.nextInt();
+        if(a > b){
+            max = step = a;
+        }
+        else{
+            max = step = b;
+        }
+        while(a!= 0) {
+            if(max % a == 0 && max % b == 0) {
+                lcm = max;
+                break;
+            }
+            max += step;
+        }
+        System.out.println("LCM of given numbers is :: "+lcm);
+    }
+}
