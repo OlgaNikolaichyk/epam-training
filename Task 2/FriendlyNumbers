@@ -1,24 +1,35 @@
-import java.util.Scanner;
-public class FriendlyNumbers {
-    public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter first number: ");
-        int num1 = in.nextInt();
-        System.out.println("Enter second number: ");
-        int num2 = in.nextInt();
-        int sum_num1 = 0, sum_num2 = 0;
-        for (int i = 1; i <= num1; i++) {
-            if (num1 % i == 0)
-                sum_num1 += i;
+public static void friendlyNumbers(int numOne, int numTwo){
+
+        String result = "Friendly numbers: \n";
+        int sum1;
+        int sum2;
+        if(numOne > 0 && numTwo > 0) {
+        for (int number = numOne; number <= numTwo; number++) {
+            sum1 = sumDivisors(number);
+            if (sum1 <= numTwo && sum1 != number) {
+                sum2 = sumDivisors(sum1);
+                if (sum2 == number) {
+                    number = sum2;
+        
+                    if (!String.valueOf(result).contains(String.valueOf(number))) {
+        
+                        result += number + " " + sum1 + "; \n";
+        
+                    }
+        
+                }
+        
+            }
+        
         }
-        for (int i = 1; i <= num2; i++) {
-            if (num2 % i == 0)
-                sum_num2 += i;
+        
+        System.out.println(result);
+        
+        } else {
+        
+            System.out.println("The numbers can't be negative");
+        
         }
-        if (sum_num1 == sum_num2)
-            System.out.println("This numbers are amicable.");
-        else
-            System.out.println("This numbers are not amicable.");
-        System.out.println("\n");
-    }
+        
 }
+    
