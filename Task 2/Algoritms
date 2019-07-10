@@ -1,3 +1,27 @@
+//find the largest digit of a natural number
+
+import java.util.Scanner;
+class NumberDigit {
+    public static void main(String args[]) {
+        int a;
+        int b;
+        int ld = 0;
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter a Number :");
+        b = num.nextInt();
+        while (b > 0) {
+            a = b % 10;
+            if (ld < a) {
+                ld = a;
+            }
+            b = b / 10;
+        }
+
+        System.out.println("\nThe Largest Digit is :" + ld);
+
+    }  
+}
+
 //нод
 import java.util.Scanner;
 public class GCD {
